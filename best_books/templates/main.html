@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>David Godwin yay</title>
-  </head>
-  <body>
-    <h1>{{ first_book.title }}</h1>
-    <ul>
-      <li>{{ first_book.author_name }}</li>
-      <li>{{ first_book.original_publication_year }}</li>
-      <li>{{ first_book.average_rating }}</li>
-    </ul>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Recommend me a book</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
+</head>
+<body>
+  <p>Not sure what book to read by an author? Try their most popular book first.</p>
+  <form action="/results" method="POST">
+    <input type="text" placeholder="Author name" name="author_name">
+    <input type="submit" value="Submit">
+  </form>
+</body>
 </html>
