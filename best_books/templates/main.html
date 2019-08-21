@@ -2,14 +2,18 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Recommend me a book</title>
+  <meta name="design inspiration" content="I rather like the FT 👀">
+  <meta name="general thanks" content="Andy Gelnar @neoshrew">
+  <title>David Godwin | Books project homepage</title>
   <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
 </head>
 <body>
-  <p>Not sure what book to read by an author? Try their most popular book first.</p>
-  <form action="/results" method="POST">
-    <input type="text" placeholder="Author name" name="author_name">
-    <input type="submit" value="Submit">
-  </form>
+  <div class="center">
+    <p>Not sure what book to read by an author? Try their most popular book first.</p>
+    <form action="/results" method="POST">
+      <input type="text" placeholder="Author name" name="author_name">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
 </body>
 </html>

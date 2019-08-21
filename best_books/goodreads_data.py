@@ -61,22 +61,5 @@ def get_data_for_book_id(book_id):
 if __name__ == "__main__":
     init()
     works = get_books("pynchon")
-    gr = works[0]["book_id"]
-    print(get_data_for_book_id(gr))
-
-
-
-
-##
-#understand how to get user to enter form info, take that and use it.
-#flask form submit
-
-##Attempt to get ISBN Number for book using API query.
-#create function
-#understand API for ISBN
-#attempt to return ISBN
-#create format string for URL to decent booshop with ISBN in query.
-
-#Extra bits
-#I have entered an author with more than one match in Goodreads and want
-#to be told which author to pick from.
+    goodreads_info = works[0]["book_id"]
+    print(get_data_for_book_id(goodreads_info))

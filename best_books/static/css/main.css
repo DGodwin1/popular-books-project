@@ -4,4 +4,32 @@ body{
 
 p{
   font-family:sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+ul{
+  font-family:sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+li{
+  padding-top: 3px;
+}
+
+.buy{
+  padding-top: 10px;
+  font-family:sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.center {
+ margin: auto;
+ width: 60%;
+ border: 1px solid black;
+ padding: 10px;
+ text-align: center;
+ background-color: white;
 }

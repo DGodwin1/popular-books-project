@@ -2,17 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Results page</title>
+    <meta name="Design inspiration" content="Maybe the FT 👀">
+    <meta name="General thanks" content="Andy Gelnar @neoshrew">
+    <title>David Godwin | Books project results page</title>
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/main.css') }}">
   </head>
-  <body>
+  <body >
+    <div class="center">
     <h1>{{ first_book.title }}</h1>
     <ul>
       <li>{{ first_book.author_name }} wrote {{ first_book.title }} in {{ first_book.original_publication_year }}
       <li>It has an average rating on Goodreads of {{ first_book.average_rating }}</li>
     </ul>
-    <p>Fancy buying it? <a href="https://wordery.com/search?term={{first_book.ISBN13}}">Find it on Wordery.</a> I quite Wordery.</p>
-    <a href="/">Click to do another search</a>
-
+    <p class="buy">Fancy buying it? <a href="https://wordery.com/search?term={{first_book.ISBN13}}">Find it on Wordery.</a> I quite like Wordery.</p>
+    <p><a href="/">Click to do another search</a></p>
+</div>
   </body>
 </html>
